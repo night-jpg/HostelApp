@@ -5,7 +5,7 @@
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
-    margin-top: auto;
+    margin-top: 0px;
   }
   
   /* Links inside the navbar */
@@ -35,6 +35,6 @@
   }
   
   /* Main content */
-  .main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
+  main {
+    margin-top: 3em; /* Add a top margin to avoid content overlay */
   }

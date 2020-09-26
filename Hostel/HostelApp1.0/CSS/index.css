@@ -1,5 +1,5 @@
 /* The navigation bar */
-.navbar {
+    .navbar {
     overflow: hidden;
     background-color:#f2f2f2;
     position: fixed; /* Set the navbar to fixed position */

@@ -4,6 +4,10 @@
     border: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
 h1 {
     font-size: 4em;
     text-shadow: rgb(39, 38, 38) 3px 3px 3px;
@@ -15,25 +19,25 @@ h1 {
 
 .button {
     margin-left: 10px;
-    margin-top: 50px;
+    margin-top: 20px;
     display: inline-block;
-    padding: 10px 80px;
+    padding: 10px 40px;
     font-size: 24px;
     cursor: pointer;
     text-align: center;	
     text-decoration: none;
     outline: none;
-    color: #fff;
-    background-color: #235052;
+    color: black;
+    background-color: rgb(194, 194, 206);
     border: none;
     border-radius: 15px;
-    box-shadow: 0 9px #999;
+    box-shadow: 0 5px #999;
 }
   
-  .button:hover {background-color: #1d3f49}
+  .button:hover {background-color: gray}
   
   .button:active {
-    background-color: #37788b;
+    background-color: gray;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
@@ -43,47 +47,66 @@ li {
 }
 
 body {
-    background-image: url(../IMG/hostel.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    overflow: hidden; 
-}
-
-input::placeholder{
-    color:whitesmoke;
+    background-color: blue;
 }
 
 .esquerda, .direita, .address{   
-    background-color: rgba(102, 102, 102, 0.774);
-    margin-left: 10px;
-    margin-right: 10px;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    background-color: whitesmoke;;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
-    margin-top: 8px;
-    margin-bottom: 8px;
-    border-radius:4px;
+    
+    border-radius:4px;   
     -moz-border-radius:4px;
     -webkit-border-radius:4px;
     box-shadow: 1px 1px 2px #333333;    
     -moz-box-shadow: 1px 1px 2px #333333;
     -webkit-box-shadow: 1px 1px 2px #333333;
     border:1px solid #000000;
-    width:150px
 }
 
 .esquerda {
-    float:left;
-    width: 47%;
+    float: none;
+    width: 95%;
 }
 
 .direita {
-    float: right;
-    width: 47%;
+    float: none;
+    width: 95%
 }
 
 .address {
-    width: 98%; 
+    float: none;
+    width: 95%;
 }
 
+@media(min-width: 1100px) {
+    .esquerda, .direita, .address{   
+        margin: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .esquerda {
+        float:left;
+        width: 47%;
+    }
+
+    .direita {
+        float: right;
+        width: 47%;
+    }
+
+    .address {
+        width: 98%; 
+    }
+
+    .button {
+        margin-top: 50px;
+        padding: 10px 80px;
+    }
+}

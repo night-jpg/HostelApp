@@ -1,0 +1,102 @@
+/* The navigation bar */
+    .navbar {
+    overflow: hidden;
+    background-color: rgb(27, 44, 193);
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+    margin-top: 0px;
+    padding-left: 0px;
+    display: flex;
+  }
+
+  header.navbar{
+      top: 0;
+  }
+
+  footer.navbar{
+      bottom: 0;
+      font-size: 0.9em;
+  }
+  
+  /* Links inside the navbar */
+  header.navbar .left a ,footer.navbar p,footer.navbar address{
+    color : rgb(171, 210, 250);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  footer.navbar p,footer.navbar address
+  {
+      padding-bottom: 0px;
+      padding-top: 0.1em;
+      text-align: left;
+  }
+
+  /* Links inside the navbar */
+  header.navbar .right a {
+    color : rgb(171, 210, 250);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar .right a:hover, .navbar .left a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  /**/
+  body{
+    background-color: rgb(9, 21, 64);
+    color: rgb(233, 239, 245);
+    font-family: 'Times New Roman', Times, serif;
+    text-rendering: auto;
+    text-align: justify;
+  }
+
+  h1,h2,h3{
+    font-weight: bolder;
+  }
+
+  p{
+    text-indent: 1em;
+  }
+  
+  /* Main content */
+  main {
+    margin-top: 3em; /* Add a top margin to avoid content overlay */
+    margin-bottom: 3em; /* Add a bottom margin to avoid content overlay */
+    display: flex;
+  }
+
+
+  /* Dividindo as divs */
+  main .left{
+    width: 49%;
+  }
+
+  main .right{
+    margin-left: 2%;
+    width: 49%;
+  }
+
+  address{
+   text-indent: 1em;
+   font-style: oblique;
+  }
+
+  abbr{
+    border-bottom: .1em solid white;
+    text-decoration: none;
+    cursor: help;
+  }
+
+    img, img + p{
+      margin-left: 25%;
+      max-width:50%;
+      max-height:50%;
+      width: auto;
+      height: auto;
+  }

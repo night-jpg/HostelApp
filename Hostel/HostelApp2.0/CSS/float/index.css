@@ -38,14 +38,14 @@
   header.navbar .right a {
     float: right;
     display: block;
-    color : rgb(45, 93, 123);
+    color : rgb(171, 210, 250);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   /* Change background on mouse-over */
-  .navbar .right a:hover, .navbar .left .a:hover {
+  .navbar .right a:hover, .navbar .left a:hover {
     background: #ddd;
     color: black;
   }
@@ -63,14 +63,14 @@
     font-weight: bolder;
   }
 
-    p{
-      text-indent: 1em;
-    }
+  p{
+    text-indent: 1em;
+  }
   
   /* Main content */
   main {
     margin-top: 3em; /* Add a top margin to avoid content overlay */
-    margin-bottom: 30px; /* Add a bottom margin to avoid content overlay */
+    margin-bottom: 3em; /* Add a bottom margin to avoid content overlay */
   }
 
 
@@ -86,10 +86,21 @@
     float: right;
   }
 
-  img {
+  address{
+   text-indent: 1em;
+   font-style: oblique;
+  }
+
+  abbr{
+    border-bottom: .1em solid white;
+    text-decoration: none;
+    cursor: help;
+  }
+
+    img, img + p{
       margin-left: 25%;
-      max-width:300px;
-      max-height:300px;
+      max-width:50%;
+      max-height:50%;
       width: auto;
       height: auto;
   }

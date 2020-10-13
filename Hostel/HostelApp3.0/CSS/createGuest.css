@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(27, 44, 193);
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+    margin-top: 0px;
+    padding-left: 0px;
+    display: flex;
+}
+  
+header.navbar{
+    top: 0;
+}
+  
+footer.navbar{
+    bottom: 0;
+    font-size: 0.9em;
+}
+  
+/* Links inside the navbar */
+header.navbar .left a ,footer.navbar p,footer.navbar address{
+    color : rgb(171, 210, 250);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+footer.navbar p,footer.navbar address {
+      padding-bottom: 0px;
+      padding-top: 0.1em;
+      text-align: left;
+}
+  
+/* Links inside the navbar */
+header.navbar .right a {
+    color : rgb(171, 210, 250);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Change background on mouse-over */
+.navbar .right a:hover, .navbar .left a:hover {
+    background: #ddd;
+    color: black;
+}
+  
+/**/
+body{
+    background-color: rgb(9, 21, 64);
+    color: rgb(233, 239, 245);
+    font-family: 'Times New Roman', Times, serif;
+    text-rendering: auto;
+    text-align: justify;
+}
+  
+h1,h2,h3{
+    font-weight: bolder;
+}
+
+body {
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 4em;
+    text-shadow: rgb(39, 38, 38) 3px 3px 3px;
+    margin-top: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 60px;
+    margin-bottom: 30px;
+}
+
+.button {
+    margin-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;	
+    text-decoration: none;
+    outline: none;
+    color: black;
+    background-color: rgb(194, 194, 206);
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+  
+  .button:hover {background-color: gray}
+  
+  .button:active {
+    background-color: gray;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: blue;
+}
+
+input{   
+    background-color: whitesmoke;;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    
+    border-radius:4px;   
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+    box-shadow: 1px 1px 2px #333333;    
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    border:1px solid #000000;
+}
+
+.linha {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    margin: 5px 10px 5px 10px;
+}
+
+.campo {
+    width: 50%;
+}
+
+.address {
+    width: 100%;
+}

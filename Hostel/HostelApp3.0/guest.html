@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/guest.css">
+    <link rel="stylesheet" href="CSS/guests.css">
     <title>Hostel Sparkling Aria</title>
 </head>
 
@@ -26,11 +26,7 @@
             <div class="left1">
                 <b>Guests</b>
             </div>
-            <div class="left2">
-                Show
-                <label><input type="text" id="User" name="Name" value="10" size="1px"/></label>
-                entries
-            </div>
+
         </div>
         <div class="right">
             <div class="right1">
@@ -38,10 +34,10 @@
             </div>
             <div class="right2">
                 <label>Search: <input type="text" id="User" name="Name" /></label>
-            </div>       
+            </div>
         </div>
-        <table>
-        	<thead>
+        <table id="guestTable">
+            <thead>
                 <tr>
                     <th>FName</th>
                     <th>LName</th>
@@ -54,14 +50,18 @@
             </thead>
             <tbody id="corpo-tabela"></tbody>
         </table>
-        
+        <button id="bN" class="buttonN" size="20px" type="button">Next</button>
+        <button id="bP" class="buttonP" type="button">Previous</button>
         <footer class="navbar">
-            <p>Sparkling Water Hostel<p>
-            <p>Sparkling Water Main st. 1000. Caxambu-<abbr title="Minas Gerais">MG</abbr><p>
+            <p>Sparkling Water Hostel
+            <p>
+            <p>Sparkling Water Main st. 1000. Caxambu-<abbr title="Minas Gerais">MG</abbr>
+            <p>
         </footer>
     </main>
 
-   <script src="JS/guests.js"></script>
-   <script src="JS/guests2.js"></script>
+    <script src="JS/guests.js"></script>
+    <script src="JS/guests2.js"></script>
 </body>
+
 </html>

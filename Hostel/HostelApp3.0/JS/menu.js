@@ -1,5 +1,6 @@
+
 //Pegando o elemento pai
-let x = document.getElementsByTagName("header");
+let header = document.getElementsByTagName("header");
 
 
 let navbar = document.createElement('div');
@@ -89,12 +90,49 @@ left.appendChild(contactParagraph);
 right.appendChild(signInParagraph);
 right.appendChild(signUpParagraph);
 
-
-
-
 //Anexando as divs a navbar
 navbar.appendChild(left);
 navbar.appendChild(right);
 
-x[0].appendChild(navbar);
+header[0].appendChild(navbar);
+
+
+//Criando o footer
+
+let footer = document.getElementsByTagName("footer");
+
+//Criando a div da footbar
+
+let footbar = document.createElement('div');
+footbar.className = "footer";
+
+//Criando os elementos
+let firstParagraph = document.createElement('p');
+let secondParagraph = document.createElement('p');
+let firstDot = document.createElement('p');
+let abbr1 = document.createElement('abbr');
+abbr1.title = "Minas Gerais";
+
+// Criar o texto
+let firstText = document.createTextNode("Sparkling Water Hostel");
+let secondText = document.createTextNode("Sparkling Water Main st. 1000. Caxambu-");
+let firstDotText = document.createTextNode("•");
+let abbr1Text = document.createTextNode("MG");
+
+// Anexar o nó de texto ao elemento respectivo
+firstParagraph.appendChild(firstText);
+secondParagraph.appendChild(secondText);
+firstDot.appendChild(firstDotText);
+abbr1.appendChild(abbr1Text);
+
+//Adicionando os abbrs aos parágrafos
+secondParagraph.appendChild(abbr1);
+
+//Anexando as divs a footbar
+
+footbar.appendChild(firstParagraph);
+footbar.appendChild(firstDot);
+footbar.appendChild(secondParagraph);
+
+footer[0].appendChild(footbar);
 

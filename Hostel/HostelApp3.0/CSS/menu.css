@@ -15,14 +15,20 @@
       top: 0;
   }
   
-  footer.navbar{
+  .footer{
+      background-color: rgb(27, 44, 193);
+      width: 100%;
       display: flex;
       bottom: 0;
       font-size: 0.9em;
+      position: fixed;
+      margin-bottom: 0px;
+      padding-left: 0px;
+      padding-bottom: 0px;
   }
   
   /* Links inside the navbar */
-  .navbar .left p a ,footer.navbar p,footer.navbar address{
+  .navbar .left p a ,.footer p,.footer address{
     float: left;
     display: block;
     color : rgb(171, 210, 250);
@@ -31,7 +37,7 @@
     text-decoration: none;
   }
   
-  footer.navbar p,footer.navbar address
+  .footer p,.footer address
   {
       padding-bottom: 0px;
       padding-top: 0.1em;

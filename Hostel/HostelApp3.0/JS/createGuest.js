@@ -9,7 +9,10 @@ button.addEventListener('click', function() {
     let country = document.querySelector("#country");
     let state = document.querySelector("#state");
 
+    let id = localStorage.getItem('ultimoID');
+
     let guest = {
+        id: (parseInt(id) + 1),
         firstName: fName.value,
         lastName: lName.value,
         emailAddress: email.value,
@@ -19,5 +22,6 @@ button.addEventListener('click', function() {
         state: state.value
     }
    
-    localStorage.setItem(fName.value, JSON.stringify(guest));
+    localStorage.setItem('ultimoID', parseInt(id) + 1);
+    localStorage.setItem(parseInt(id) + 1, JSON.stringify(guest));
 });

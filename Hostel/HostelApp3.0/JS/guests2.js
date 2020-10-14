@@ -15,7 +15,7 @@ searchBar.addEventListener('keyup', function (e) {
     if (inp == '') {
         countS = 10;
         countI = 1;
-        for (i = 1; i < countS; i++) {
+        for (i = 1; i <= countS; i++) {
             tr[i].style.display = '';
         }
         for (i = 11; i < tr.length; i++) {

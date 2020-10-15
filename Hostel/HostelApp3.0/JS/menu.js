@@ -114,7 +114,7 @@ let abbr1 = document.createElement('abbr');
 abbr1.title = "Minas Gerais";
 
 // Criar o texto
-let firstText = document.createTextNode("Sparkling Water Hostel");
+let firstText = document.createTextNode("Sparkling Water Hostel©");
 let secondText = document.createTextNode("Sparkling Water Main st. 1000. Caxambu-");
 let firstDotText = document.createTextNode("•");
 let abbr1Text = document.createTextNode("MG");

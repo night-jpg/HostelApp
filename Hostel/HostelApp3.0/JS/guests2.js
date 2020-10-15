@@ -23,8 +23,8 @@ searchBar.addEventListener('keyup', function (e) {
         }
     } else {
         for (i = 1; i < tr.length; i++) {
-            first = tr[i].getElementsByTagName('td')[0];
-            last = tr[i].getElementsByTagName('td')[1];
+            first = tr[i].getElementsByTagName('td')[1];
+            last = tr[i].getElementsByTagName('td')[2];
             firstValue = first.textContent || first.innerText;
             lastValue = last.textContent || last.innerText;
 

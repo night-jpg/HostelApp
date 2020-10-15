@@ -2,7 +2,7 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="CSS/guests.css">
+    <link rel="stylesheet"  href="CSS/guests.css">
     <title>Hostel Sparkling Aria</title>
 </head>
 
@@ -15,87 +15,46 @@
             <a href="xx3.html">Reservations</a>
             <a href="sss.html">Contact</a>
         </div>
-        <div class="right">
+        <div class = "right">
             <a href="signin.html">Sign In</a>
             <a href="signup.html">Sign Up</a>
         </div>
     </header>
     <hr>
     <main class="main">
-        <div class="left">
-            <div class="left1">
-                <b>Guests</b>
+            <div>
+                <b class="title">Guests</b>
             </div>
-            <div class="left2">
-                Show
-                <label><input type="text" id="User" name="Name" value="10" size="1px"/></label>
-                entries
+            <div class="box_searche">
+                <a class = "new_customer_title" href="createCustomer.html"><b>Add new customer</b></a><br>
+                <label>Search: <input type="text" id="search" name="Name" /></label>
             </div>
-        </div>
-        <div class="right">
-            <div class="right1">
-                <a href="createGuest"><b>Add new customer</b></a>
-            </div>
-            <div class="right2">
-                <label>Search: <input type="text" id="User" name="Name" /></label>
-            </div>       
-        </div>
-        <table>
-        	<tr>
-        		<th>First name</th>
-        		<th>Last name</th>
-        		<th>Phone number</th>
-        		<th>E-mail</th>
-        	</tr>
-        	<tr>
-        		<td>Gustavim</td>
-        		<td>Gustavão</td>
-        		<td>(12) 40028922</td>
-        		<td>praQemail@hotmail.com</td>
-        	</tr>
-        	<tr>
-        		<td>Gustavim</td>
-        		<td>Gustavão</td>
-        		<td>(12) 40028922</td>
-        		<td>praQemail@hotmail.com</td>
-        	</tr>
-        	<tr>
-        		<td>Gustavim</td>
-        		<td>Gustavão</td>
-        		<td>(12) 40028922</td>
-        		<td>praQemail@hotmail.com</td>
-        	</tr>
-        	<tr>
-        		<td>Gustavim</td>
-        		<td>Gustavão</td>
-        		<td>(12) 40028922</td>
-        		<td>praQemail@hotmail.com</td>
-        	</tr>
-        	<tr>
-        		<td>Gustavim</td>
-        		<td>Gustavão</td>
-        		<td>(12) 40028922</td>
-        		<td>praQemail@hotmail.com</td>
-        	</tr>
-        	<tr>
-        		<td>Gustavim</td>
-        		<td>Gustavão</td>
-        		<td>(12) 40028922</td>
-        		<td>praQemail@hotmail.com</td>
-        	</tr>
-        	<tr>
-        		<td>Gustavim</td>
-        		<td>Gustavão</td>
-        		<td>(12) 40028922</td>
-        		<td>praQemail@hotmail.com</td>
-        	</tr>
-        </table>
-        
-        <footer class="navbar">
-            <p>Sparkling Water Hostel<p>
-            <p>Sparkling Water Main st. 1000. Caxambu-<abbr title="Minas Gerais">MG</abbr><p>
-        </footer>
     </main>
+        <table id="guestTable">
+            <thead>
+                <tr>
+                    <th>FName</th>
+                    <th>LName</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Address</th>
+                    <th>Country</th>
+                    <th>State</th>
+                </tr>
+            </thead>
+            <tbody id="corpo-tabela"></tbody>
+        </table>
+        <button id="bN" class="buttonN" size="20px" type="button">Next</button>
+        <button id="bP" class="buttonP" type="button">Previous</button>
+        <footer class="navbar">
+            <p>Sparkling Water Hostel
+            <p>
+            <p>Sparkling Water Main st. 1000. Caxambu-<abbr title="Minas Gerais">MG</abbr>
+            <p>
+        </footer>
+
+    <script src="JS/guests.js"></script>
+    <script src="JS/guests2.js"></script>
 </body>
 
 </html>

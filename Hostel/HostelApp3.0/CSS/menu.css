@@ -43,6 +43,16 @@
       padding-top: 0.1em;
       text-align: left;
   }
+
+  .footer p a
+  {
+    color : rgb(171, 210, 250);
+    padding-top: 0px;
+    float: left;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
   
   /* Links inside the navbar */
   .navbar .right p a {
@@ -55,7 +65,7 @@
   }
   
   /* Change background on mouse-over */
-  .navbar .right p a:hover, .navbar .left p a:hover {
+  .navbar .right p a:hover, .navbar .left p a:hover, .footer p a:hover{
     background: #ddd;
     color: black;
   }

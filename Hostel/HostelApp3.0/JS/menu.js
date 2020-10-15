@@ -110,29 +110,51 @@ footbar.className = "footer";
 let firstParagraph = document.createElement('p');
 let secondParagraph = document.createElement('p');
 let firstDot = document.createElement('p');
+let secondDot = document.createElement('p');
 let abbr1 = document.createElement('abbr');
+let sup = document.createElement('sup');
+
+let git = document.createElement('p');
+let link = document.createElement('a');
+link.href = "https://github.com/night-jpg/HostelApp.git";
+
+
 abbr1.title = "Minas Gerais";
 
 // Criar o texto
-let firstText = document.createTextNode("Sparkling Water Hostel©");
+let firstText = document.createTextNode("Sparkling Water Hostel");
 let secondText = document.createTextNode("Sparkling Water Main st. 1000. Caxambu-");
 let firstDotText = document.createTextNode("•");
+let secondDotText = document.createTextNode("•");
 let abbr1Text = document.createTextNode("MG");
+let supText = document.createTextNode("©2020");
+let linkText = document.createTextNode("Git Repository")
 
 // Anexar o nó de texto ao elemento respectivo
 firstParagraph.appendChild(firstText);
 secondParagraph.appendChild(secondText);
 firstDot.appendChild(firstDotText);
+secondDot.appendChild(secondDotText);
 abbr1.appendChild(abbr1Text);
+sup.appendChild(supText);
+link.appendChild(linkText);
+git.appendChild(link);
 
-//Adicionando os abbrs aos parágrafos
+//Adicionando os abbrs e textos sobre escritos aos parágrafos
+firstParagraph.appendChild(sup);
 secondParagraph.appendChild(abbr1);
+
+
+//Duplicando os dots
+
 
 //Anexando as divs a footbar
 
 footbar.appendChild(firstParagraph);
 footbar.appendChild(firstDot);
 footbar.appendChild(secondParagraph);
+footbar.appendChild(secondDot);
+footbar.appendChild(git);
 
 footer[0].appendChild(footbar);
 

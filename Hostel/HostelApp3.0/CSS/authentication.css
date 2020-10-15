@@ -1,0 +1,123 @@
+html {
+	margin: 0 ;
+	padding: 0;
+	
+}
+.flex-conteiner{
+
+	display: flex;
+
+	flex-direction: row;
+	
+}
+
+
+form{
+	
+	margin: 0 auto;
+	width: 400px;
+	padding: 1em;
+	border: 1px solid #ccc;
+	border-radius: 1em;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+form li + li {
+	margin-top: 1em;
+}
+
+label {
+				
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input,textarea {
+				
+	font: 1em sans-serif;
+				
+	width: 300px;
+	box-sizing: border-box;
+	border: 1px solid #999;
+}
+
+input:focus,textarea:focus {
+	border-color: #000;
+}
+
+input {
+		
+	
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+textarea {
+
+	vertical-align: top;
+    height: 5em;
+}
+
+.button {
+	padding-left: 90px;			
+}
+
+h1{
+    margin: 0 auto;
+	text-align: center;
+	padding: 1em;
+
+}
+button {
+				
+	margin-left: 0.5em;
+    border-top-color: #000000;
+	border-right-color: #000000;
+	border-bottom-color: #000000;
+    border-left-color: #000000;
+    border-radius: 10px;
+    color: #000000;
+	background-color: rgb(127, 203, 247);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color:#f2f2f2;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+	margin-top: 0px;
+	float:none;
+  }
+  
+  /* Links inside the navbar */
+  .navbar .left a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  /* Links inside the navbar */
+  .navbar .right a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar .right a:hover, .navbar .left .a:hover {
+    background: #ddd;
+    color: black;
+  }

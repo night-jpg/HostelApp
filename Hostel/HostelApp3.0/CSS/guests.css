@@ -1,0 +1,129 @@
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(27, 44, 193);
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+    margin-top: 0px;
+    padding-left: 0px;
+  }
+
+  header.navbar{
+      top: 0;
+  }
+
+  footer.navbar{
+      bottom: 0;
+      font-size: 0.9em;
+  }
+  
+  /* Links inside the navbar */
+  header.navbar .left a ,footer.navbar p,footer.navbar address{
+    float: left;
+    display: block;
+    color : rgb(171, 210, 250);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  footer.navbar p,footer.navbar address
+  {
+      padding-bottom: 0px;
+      padding-top: 0.1em;
+      text-align: left;
+  }
+
+  /* Links inside the navbar */
+  header.navbar .right a {
+    float: right;
+    display: block;
+    color : rgb(45, 93, 123);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change background on mouse-over */
+  .navbar .right a:hover, .navbar .left .a:hover {
+    background: #ddd;
+    color: red;
+  }
+
+  footer.navbar{
+    bottom: 0;
+    font-size: 0.9em;
+}
+  
+  .main left {
+    float: left;
+  }
+
+  body{
+    background-color: rgb(9, 21, 64);
+    color: rgb(233, 239, 245);
+    font-family: 'Times New Roman', Times, serif;
+    text-rendering: auto;
+    text-align: justify;
+  }
+
+
+  .main .left .left1{
+    margin-left: 35px;
+    margin-top: 75px;
+    font-size: 50px;
+  }
+
+
+  .main .right{
+    float: right;  
+    margin-top: -55px;
+  }
+  .main .right .right1{
+    margin-right: 35px;
+    font-size: 30px;
+    color:white;
+    text-decoration: underline blue;
+  }
+
+  .main .right .right2{
+     font-size: 20px;
+  }
+
+/* Estilo para a lista de guests */
+table {
+  border: 1px solid darkred;
+  width: 100%;
+  margin-top: 50px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th{
+  color: white;
+}
+
+tr, th, td{
+  padding: 10px;
+  text-align: left;
+}
+
+tr:nth-last-child(even){
+  background-color: #A9A9A9;
+}
+
+.buttonP {
+  float: right;
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+.buttonN {
+  float: right;
+  margin-top: 30px;
+}
+
+
+
+
+

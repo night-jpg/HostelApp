@@ -4,68 +4,12 @@
     border: 0;
 }
 
-/* The navigation bar */
-.navbar {
-    overflow: hidden;
-    background-color: rgb(27, 44, 193);
-    position: fixed; /* Set the navbar to fixed position */
-    width: 100%; /* Full width */
-    margin-top: 0px;
-    padding-left: 0px;
-    display: flex;
-}
-  
-header.navbar{
-    top: 0;
-}
-  
-footer.navbar{
-    bottom: 0;
-    font-size: 0.9em;
-}
-  
-/* Links inside the navbar */
-header.navbar .left a ,footer.navbar p,footer.navbar address{
-    color : rgb(171, 210, 250);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-footer.navbar p,footer.navbar address {
-      padding-bottom: 0px;
-      padding-top: 0.1em;
-      text-align: left;
-}
-  
-/* Links inside the navbar */
-header.navbar .right a {
-    color : rgb(171, 210, 250);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-/* Change background on mouse-over */
-.navbar .right a:hover, .navbar .left a:hover {
-    background: #ddd;
-    color: black;
-}
-  
-/**/
 body{
     background-color: rgb(9, 21, 64);
     color: rgb(233, 239, 245);
     font-family: 'Times New Roman', Times, serif;
     text-rendering: auto;
     text-align: justify;
-}
-  
-h1,h2,h3{
-    font-weight: bolder;
-}
-
-body {
     overflow: hidden;
 }
 
@@ -96,9 +40,9 @@ h1 {
     box-shadow: 0 5px #999;
 }
   
-  .button:hover {background-color: gray}
+.button:hover {background-color: gray}
   
-  .button:active {
+.button:active {
     background-color: gray;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
@@ -106,10 +50,6 @@ h1 {
 
 li {
     list-style-type: none;
-}
-
-body {
-    background-color: blue;
 }
 
 input{   
@@ -145,16 +85,4 @@ input{
 
 .address {
     width: 100%;
-}
-
-@media(min-width: 1100px) {
-    .right {
-        margin-left: 800px;
-    }
-}
-
-@media(max-width: 1100px) {
-    .right {
-        margin-left: 200px;
-    }
 }

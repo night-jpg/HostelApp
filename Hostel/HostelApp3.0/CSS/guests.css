@@ -71,7 +71,9 @@
   .main .left .left1{
     margin-left: 35px;
     margin-top: 75px;
-    font-size: 50px;
+    font-size: 60px;
+    text-shadow: rgb(39, 38, 38) 3px 3px 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
 
@@ -79,15 +81,15 @@
     float: right;  
     margin-top: -55px;
   }
-  .main .right .right1{
+  .main .right .right1 a{
     margin-right: 35px;
-    font-size: 30px;
-    color:white;
-    text-decoration: underline blue;
+    font-size: 35px;
+    color:darkred;
+    text-decoration: underline darkred;
   }
 
   .main .right .right2{
-     font-size: 20px;
+     font-size: 30px;
   }
 
 /* Estilo para a lista de guests */
@@ -113,14 +115,32 @@ tr:nth-last-child(even){
 }
 
 .buttonP {
-  float: right;
   margin-top: 30px;
   margin-right: 10px;
+  padding: 5px 20px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: rgb(194, 194, 206);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
 }
 
 .buttonN {
-  float: right;
   margin-top: 30px;
+  padding: 5px 30px;
+  cursor: pointer;
+  text-align: center;	
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: rgb(194, 194, 206);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
 }
 
 

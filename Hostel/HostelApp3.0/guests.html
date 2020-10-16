@@ -13,24 +13,17 @@
     </header>
     <hr>
     <main class="main">
-        <div class="left">
-            <div class="left1">
-                <b>Guests</b>
+            <div>
+                <b class="title">Guests</b>
             </div>
-
-        </div>
-        <div class="right">
-            <div class="right1">
-                <a href="createGuest.html" id="addGuest"><b>Add new customer</b></a><br>
-            </div>
-            <div class="right2">
+            <div class="box_searche">
+                <a class = "new_customer_title" href="createCustomer.html"><b>Add new customer</b></a><br>
                 <label>Search: <input type="text" id="search" name="Name" /></label>
             </div>
-        </div>
+    </main>
         <table id="guestTable">
             <thead>
                 <tr>
-                    <th>#</th>
                     <th>FName</th>
                     <th>LName</th>
                     <th>Email</th>
@@ -42,10 +35,8 @@
             </thead>
             <tbody id="corpo-tabela"></tbody>
         </table>
-        <div align="center">
-            <button id="bP" class="buttonP" type="button">Previous</button>
-            <button id="bN" class="buttonN" type="button">Next</button>           
-        </div>
+        <button id="bN" class="buttonN" size="20px" type="button">Next</button>
+        <button id="bP" class="buttonP" type="button">Previous</button>
         
         <footer class="navbar">
             

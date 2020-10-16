@@ -1,4 +1,8 @@
 
+// Verificando Login
+
+
+
 //Pegando o elemento pai
 let header = document.getElementsByTagName("header");
 
@@ -32,7 +36,7 @@ rooms.href = "guests.html";
 
 let reservationsParagraph = document.createElement('p');
 let reservations = document.createElement('a');
-reservations.href = "createGuest.html";
+reservations.href = "guests.html";
 
 let contactParagraph = document.createElement('p');
 let contact = document.createElement('a');
@@ -46,7 +50,11 @@ signIn.href = "authentication.html";
 
 let signUpParagraph = document.createElement('p');
 let signUp = document.createElement('a');
-signUp.href = "authentication.html";
+signUp.href = "createGuest.html";
+
+let logOutParagraph = document.createElement('p');
+let logOut = document.createElement('a');
+logOut.href = "logout.html";
 
 // Criar o texto dos elementos da div esquerda
 let homeText = document.createTextNode("Home");
@@ -58,6 +66,7 @@ let contactText = document.createTextNode("Contact");
 //Criar o texto dos elementos da div direita
 let signInText = document.createTextNode("Sign In");
 let signUpText = document.createTextNode("Sign Up");
+let logOutText = document.createTextNode("Log Out");
 
 // Anexar o nó de texto ao elemento respectivo
 home.appendChild(homeText);
@@ -65,8 +74,9 @@ customers.appendChild(customersText);
 rooms.appendChild(roomsText);
 reservations.appendChild(reservationsText);
 contact.appendChild(contactText);
-signIn.appendChild(signInText)
-signUp.appendChild(signUpText)
+signIn.appendChild(signInText);
+signUp.appendChild(signUpText);
+logOut.appendChild(logOutText);
 
 
 // Anexando os elementos aos parágrafos
@@ -78,6 +88,7 @@ contactParagraph.appendChild(contact);
 
 signInParagraph.appendChild(signIn);
 signUpParagraph.appendChild(signUp);
+logOutParagraph.appendChild(logOut);
 
 //Adicionando os parágrafos as divs
 
@@ -87,6 +98,7 @@ left.appendChild(roomsParagraph);
 left.appendChild(reservationsParagraph);
 left.appendChild(contactParagraph);
 
+right.appendChild(logOutParagraph);
 right.appendChild(signInParagraph);
 right.appendChild(signUpParagraph);
 

@@ -79,11 +79,11 @@
     float: right;  
     margin-top: -60px;
   }
-  .main .right .right1{
+  .main .right .right1 a{
     margin-right: 35px;
-    font-size: 30px;
-    color:white;
-    text-decoration: underline blue;
+      font-size: 35px;
+      color:darkred;
+      text-decoration: underline darkred;
   }
 
   .main .right .right2{
@@ -113,16 +113,33 @@ tr:nth-last-child(even){
 }
 
 .buttonP {
-  float: right;
   margin-top: 30px;
   margin-right: 10px;
+  padding: 5px 20px;
+  cursor: pointer;
+  text-align: center; 
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: rgb(194, 194, 206);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
 }
 
 .buttonN {
-  float: right;
   margin-top: 30px;
+  padding: 5px 30px;
+  cursor: pointer;
+  text-align: center; 
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: rgb(194, 194, 206);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
 }
-
 
 
 

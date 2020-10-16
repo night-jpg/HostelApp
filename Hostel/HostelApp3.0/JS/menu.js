@@ -24,11 +24,11 @@ home.href = "index.html";
 
 let customersParagraph = document.createElement('p');
 let customers = document.createElement('a');
-customers.href = "guest.html";
+customers.href = "guests.html";
 
 let roomsParagraph = document.createElement('p');
 let rooms = document.createElement('a');
-rooms.href = "guest.html";
+rooms.href = "guests.html";
 
 let reservationsParagraph = document.createElement('p');
 let reservations = document.createElement('a');

@@ -1,96 +1,91 @@
-/* The navigation bar */
 .navbar {
     overflow: hidden;
     background-color: rgb(27, 44, 193);
     position: fixed; /* Set the navbar to fixed position */
     width: 100%; /* Full width */
     margin-top: 0px;
-    padding-left: 0px;
-  }
+    padding-left: -5px;
+    padding: 12px;
+    display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
 
-  header.navbar{
-      top: 0;
-  }
+/*seta navbar no topo*/
+header.navbar{
+    top: 0;
+}
 
-  footer.navbar{
-      bottom: 0;
-      font-size: 0.9em;
-  }
-  
-  /* Links inside the navbar */
-  header.navbar .left a ,footer.navbar p,footer.navbar address{
-    float: left;
-    display: block;
-    color : rgb(171, 210, 250);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  footer.navbar p,footer.navbar address
-  {
-      padding-bottom: 0px;
-      padding-top: 0.1em;
-      text-align: left;
-  }
-
-  /* Links inside the navbar */
-  header.navbar .right a {
-    float: right;
-    display: block;
-    color : rgb(45, 93, 123);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change background on mouse-over */
-  .navbar .right a:hover, .navbar .left .a:hover {
-    background: #ddd;
-    color: red;
-  }
-
-  footer.navbar{
+footer.navbar{
     bottom: 0;
     font-size: 0.9em;
 }
-  
-  .main left {
-    float: left;
-  }
 
-  body{
+header.left, header.right {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;  
+}
+
+
+header.navbar .left a{
+  color : rgb(171, 210, 250);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer.navbar p,footer.navbar address{
+    padding-bottom: 0px;
+    padding-top: 0.1em;
+    text-align: left;
+}
+
+/* Links inside the navbar */
+header.navbar .right a {
+  color : rgb(45, 93, 123);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+  /* Change background on mouse-over */
+.navbar .right a:hover, .navbar .left .a:hover {
+   background: #ddd;
+   color: red;
+}
+
+main.main{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+body{
     background-color: rgb(9, 21, 64);
     color: rgb(233, 239, 245);
     font-family: 'Times New Roman', Times, serif;
     text-rendering: auto;
     text-align: justify;
-  }
+}
 
-
-  .main .left .left1{
-    margin-left: 35px;
+main.main div b.title{
+  margin-left: 35px;
     margin-top: 75px;
     font-size: 60px;
     text-shadow: rgb(39, 38, 38) 3px 3px 3px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
+}
 
-
-  .main .right{
-    float: right;  
-    margin-top: -55px;
-  }
-  .main .right .right1 a{
-    margin-right: 35px;
+main.main div a.new_customer_title{
+  margin-right: 35px;
     font-size: 35px;
     color:darkred;
     text-decoration: underline darkred;
-  }
-
-  .main .right .right2{
-     font-size: 30px;
-  }
+}
 
 /* Estilo para a lista de guests */
 table {
@@ -119,7 +114,7 @@ tr:nth-last-child(even){
   margin-right: 10px;
   padding: 5px 20px;
   cursor: pointer;
-  text-align: center;	
+  text-align: center; 
   text-decoration: none;
   outline: none;
   color: black;
@@ -133,7 +128,7 @@ tr:nth-last-child(even){
   margin-top: 30px;
   padding: 5px 30px;
   cursor: pointer;
-  text-align: center;	
+  text-align: center; 
   text-decoration: none;
   outline: none;
   color: black;
@@ -142,8 +137,3 @@ tr:nth-last-child(even){
   border-radius: 15px;
   box-shadow: 0 5px #999;
 }
-
-
-
-
-

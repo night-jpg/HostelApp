@@ -1,0 +1,143 @@
+body{
+	display: grid;
+	grid-template-rows: 0vh 20vh 50vh 10vh;
+	grid-template-areas: "navbar navbar navbar" "main main main" "tablex tablex tablex" "footer footer footer"
+}
+
+.navbar{ grid-area: navbar; }
+
+.main{ grid-area: main; }
+
+.table{ grid-area: tablex; }
+
+.footer{ grid-area: footer; }
+
+.navbar, .footer {
+    overflow: hidden;
+    background-color: rgb(27, 44, 193);
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+header.navbar{
+    top: 0;
+}
+
+footer.footer{
+    bottom: 0;
+    font-size: 0.9em;
+}
+
+header.navbar .left a ,footer.footer p,footer.footer address{
+    float: left;
+    display: block;
+    color : rgb(171, 210, 250);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+header.navbar .right a {
+    float: right;
+    display: block;
+    color : rgb(45, 93, 123);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+footer.footer p,footer.footer address{
+    padding-bottom: 0px;
+    padding-top: 0.1em;
+    text-align: left;
+}
+
+footer.footer{
+    bottom: 0;
+    font-size: 0.9em;
+}
+
+.navbar .right a:hover, .navbar .left .a:hover {
+    background: #ddd;
+    color: red;
+ }
+
+body{
+    background-color: rgb(9, 21, 64);
+    color: rgb(233, 239, 245);
+    font-family: 'Times New Roman', Times, serif;
+    text-rendering: auto;
+    text-align: justify;
+}
+
+main .left1{
+    margin-left: 35px;
+    margin-top: 75px;
+    font-size: 60px;
+    text-shadow: rgb(39, 38, 38) 3px 3px 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main .right1{
+    float: right;  
+    margin-top: -55px;
+}
+
+.main .right1 a{
+    margin-right: 35px;
+    font-size: 35px;
+    color:darkred;
+    text-decoration: underline darkred;
+}
+
+table {
+  border: 1px solid darkred;
+  width: 100%;
+  margin-top: 50px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+th{
+  color: white;
+}
+
+tr, th, td{
+  padding: 10px;
+  text-align: left;
+}
+
+tr:nth-last-child(even){
+  background-color: #A9A9A9;
+}
+
+.buttonP {
+  margin-top: 30px;
+  margin-right: 10px;
+  padding: 5px 20px;
+  cursor: pointer;
+  text-align: center; 
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: rgb(194, 194, 206);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.buttonN {
+  margin-top: 30px;
+  padding: 5px 30px;
+  cursor: pointer;
+  text-align: center; 
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: rgb(194, 194, 206);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}

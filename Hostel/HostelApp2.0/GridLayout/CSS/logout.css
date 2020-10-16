@@ -1,0 +1,54 @@
+/* The navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: rgb(27, 44, 193);
+    position: fixed; /* Set the navbar to fixed position */
+    width: 100%; /* Full width */
+    margin-top: 0px;
+    padding-left: 0px;
+    display: grid;
+    grid-template-columns: 45% 45%;
+}
+
+header.navbar{
+    top: 0;
+}
+  
+/* Links inside the navbar */
+header.navbar .left a{
+    color : rgb(171, 210, 250);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links inside the navbar */
+header.navbar .right a {
+    color : rgb(171, 210, 250);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  /* Change background on mouse-over */
+.navbar .right a:hover, .navbar .left a:hover {
+    background: #ddd;
+    color: black;
+}
+
+h1{
+    text-align: center;
+    margin-top: 80px;
+}
+
+p{
+    text-align: center;
+}
+
+#mensagem{
+    font-size: 20px
+}
+
+em strong{
+    color: #FF0000;
+}

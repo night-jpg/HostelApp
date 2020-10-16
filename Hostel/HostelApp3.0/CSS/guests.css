@@ -109,6 +109,9 @@ tr:nth-last-child(even){
   background-color: #A9A9A9;
 }
 
+.search {
+  font-size: 25px;
+}
 .buttonP {
   margin-top: 30px;
   margin-right: 10px;
